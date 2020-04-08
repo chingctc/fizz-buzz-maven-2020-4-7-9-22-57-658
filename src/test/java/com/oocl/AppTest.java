@@ -28,4 +28,12 @@ public class AppTest {
 
         Assert.assertEquals("Fizz", result);
     }
+
+    @Test
+    public void should_return_number_when_number_is_multiple_of_5() {
+        App app = new App();
+        String result = app.FizzBuzz(5);
+
+        Assert.assertEquals("Buzz", result);
+    }
 }

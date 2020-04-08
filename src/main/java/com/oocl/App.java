@@ -15,6 +15,9 @@ public class App
         if(sequenceNumber % 3 == 0){
             return "Fizz";
         }
+        if(sequenceNumber % 5 == 0){
+            return "Buzz";
+        }
         return String.valueOf(sequenceNumber);
     }
 }
