@@ -12,7 +12,10 @@ public class App
 //    }
 
     public String FizzBuzz(int sequenceNumber) {
-        return String.valueOf(1);
+        if(sequenceNumber % 3 == 0){
+            return "Fizz";
+        }
+        return String.valueOf(sequenceNumber);
     }
 }
 
