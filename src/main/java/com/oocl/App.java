@@ -6,22 +6,16 @@ package com.oocl;
  */
 public class App 
 {
-//    public static void main( String[] args )
-//    {
-//        System.out.println( "Hello World!" );
-//    }
-
     public String FizzBuzz(int sequenceNumber) {
-        if(sequenceNumber % 3 == 0 && sequenceNumber % 5 == 0) {
-            return "FizzBuzz";
-        }
+        String result = "";
+
         if(sequenceNumber % 3 == 0){
-            return "Fizz";
+            result += "Fizz";
         }
         if(sequenceNumber % 5 == 0){
-            return "Buzz";
+            result += "Buzz";
         }
-        return String.valueOf(sequenceNumber);
+        return result == "" ? String.valueOf(sequenceNumber) : result;
     }
 }
 

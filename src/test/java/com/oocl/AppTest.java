@@ -9,11 +9,6 @@ import static org.junit.Assert.assertThat;
 
 public class AppTest {
     @Test
-    public void helloWorld() {
-
-    }
-
-    @Test
     public void should_return_number_when_normal_number_is_inputted() {
         App app = new App();
         String result = app.FizzBuzz(1);
