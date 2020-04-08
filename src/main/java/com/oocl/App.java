@@ -12,6 +12,9 @@ public class App
 //    }
 
     public String FizzBuzz(int sequenceNumber) {
+        if(sequenceNumber % 3 == 0 && sequenceNumber % 5 == 0) {
+            return "FizzBuzz";
+        }
         if(sequenceNumber % 3 == 0){
             return "Fizz";
         }

@@ -36,4 +36,12 @@ public class AppTest {
 
         Assert.assertEquals("Buzz", result);
     }
+
+    @Test
+    public void should_return_number_when_number_is_multiple_of_15() {
+        App app = new App();
+        String result = app.FizzBuzz(15);
+
+        Assert.assertEquals("FizzBuzz", result);
+    }
 }
